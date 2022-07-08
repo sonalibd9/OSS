@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +12,7 @@ namespace CRMWebApp.Controllers
         public ActionResult Index()
         {
             List<customer> c = customerManager.Lodedata();
-           // return this.Json(c, JsonRequestBehavior.AllowGet);
+            return this.Json(c, JsonRequestBehavior.AllowGet);
             return View(c);
             //comment from shubham tiware
              //comment from Suraj Dhande
